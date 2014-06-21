@@ -43,7 +43,7 @@ sub_totalx <- total[,c(TRUE,TRUE,mean_std_vector)]
 names(sub_totalx)
 
 #writedata in text file
-write.table(sub_totalx,"tidydata.txt",row.names=FALSE)
+write.table(sub_totalx,"merged_data.txt",row.names=FALSE)
 
 library(reshape2)
 #sub_totalx$subject <- as.numeric(sub_totalx$subject)

@@ -40,8 +40,8 @@ mean_std_vector <- grepl('mean|std', names(total))
 # 15 generate sub_totalx with only subject,activity, mean,std columns
 sub_totalx <- total[,c(TRUE,TRUE,mean_std_vector)]
 names(sub_totalx)
-# 16 writedata in tidydata.txt file
-write.table(sub_totalx,"tidydata.txt",row.names=FALSE)
+# 16 writedata in merged_data.txt file
+write.table(sub_totalx,"merged_data.txt",row.names=FALSE)
 # 17 load reshape2 package
 library(reshape2)
 # 18 default Using subject, activity_label as id variables
